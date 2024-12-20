@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+  <body class="overflow-x-hidden font-Outfit leading-8 dark:bg-black dark:text-white">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="./portfolio_images/images/header-bg-color.png">
+    </div>
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <img src="./logo.png" alt="" class="w-28 cursor-pointer mr-14 dark:hidden">
+        <img src="./logo-black.png" alt="" class="w-28 cursor-pointer mr-14 hidden dark:block">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#project">Projects</a></li>           
+        </ul>
+
+        <div class="flex items-center gap-4 font-Ovo">
+            <button onclick="toggleTheme()" ><img src="./portfolio_images/images/moon_icon.png" class="w-6 dark:hidden">
+                <img src="./portfolio_images/images/sun_icon.png" class="w-6 hidden dark:block"></button> 
+
+            <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border
+             border-gray-500 rounded-full ml-4 ">Contact<img src="./portfolio_images/images/arrow-icon.png" class="w-3 dark:hidden">
+             <img src="./portfolio_images/images/arrow-icon-dark.png" class="w-3 hidden dark:block"></a>
+
+            
+            <button class="block md:hidden ml-3" onclick="openMenu()"><img src="./portfolio_images/images/menu-black.png" class="w-6 dark:hidden">
+                <img src="./portfolio_images/images/menu-white.png" class="w-6 hidden dark:block"></button> 
+        </div>
+         
+        
+        
+        <!--Mobile-->
+    
+       <ul id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed gap-4 -right-64 top-0 bottom-0 w-64
+        h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-[#413F42]">
+        
+        <div class="absolute right-6 top-6" onclick="closeMenu()">
+        <img src="./portfolio_images/images/close-black.png" class="w-5 cursor-pointer dark:hidden">
+        <img src="./portfolio_images/images/close-white.png" class="w-5 cursor-pointer hidden dark:block">
+        </div>
+
+        <li><a href="#top" onclick="closeMenu()" >Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About me</a></li>
+        <li><a href="#project" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact Me</a></li>            
+       </ul>
+    </nav>
+<!------home------>
+   <div class="w-11/12 max-w-3xl text-centre mx-auto h-screen flex flex-col 
+   items-center justify-center gap-4">
+    <img src="./portfolio_images/images/profile-img.JPG" class="rounded-full w-32">
+    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">Hi ! I'm Divit Dwivedi.<img src="./portfolio_images/images/hand-icon.png" class="w-6"></h3>
+    <h1 class="text-3xl sm:text-6xl lg:text-66xl text-center font-Ovo">Frontend Web Developer</h1>
+    <p class="max-w-2xl mx-auto font-Ovo">I am frontend developer, currently pursuing my B.tech degree.</p>
+
+    <div class="flex flex-col sm:flex-row items-center gap-4 mt-4 ">
+     <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820b6] to-[#da7d20] text-white flex gap-2 
+     items-center">Contact Me<img src="./portfolio_images/images/right-arrow-white.png" class="w-4"></a>
+     
+     <a href="./ECS ut 1.pdf" download class="px-10 py-3 border border-gray-500 rounded-full bg-white text-wrap flex gap-2 items-center dark:text-black">My Resume<img src="./portfolio_images/images/download-icon.png" class="w-4"></a>
+     
+    </div>
+   </div>
+<!---about-->
+<div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+
+    <h4 class="text-center mb-2 text-lg">Introduction</h2>
+    <h2 class="text-center text-5xl">About Me</h2>
+      
+    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="max-w-max mx-auto relative">
+            <img src="./portfolio_images/images/profife.JPG" class=" w-64 sm:w-80 rounded-3xl max-w-none">
+        </div>
+        <div class="flex-1">
+            <p class="mb-10 mac-w-2xl">I am Frontend Developer, currently in my third year of my B.tech degree. </p>
+            <ul class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <li class="border-[0.5px] border-gray-400 p-6 cursor-pointer rounded-xl hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]
+                dark:border-white dark:hover:shadow-white dark:hover:bg-black/50"
+                ><img src="./portfolio_images/images/code-icon.png" class="w-7 mt-3 dark:hidden">
+                <img src="./portfolio_images/images/code-icon-dark.png" class="w-7 mt-3 hidden dark:block">
+                <h3 class="my-4 font-semibold text text-gray-700 dark:text-white">Languages Used :</h3>
+                <p>HTML, CSS, JavaScript ,React JS, Python</p>
+            </li>
+
+            <li class="border-[0.5px] border-gray-400 p-6 cursor-pointer rounded-xl hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]
+            dark:border-white dark:hover:shadow-white dark:hover:bg-black/50"
+                ><img src="./portfolio_images/images/edu-icon.png" class="w-7 mt-3 dark:hidden">
+                <img src="./portfolio_images/images/edu-icon-dark.png" class="w-7 mt-3 hidden dark:block">
+                <h3 class="my-4 font-semibold text text-gray-700 dark:text-white">Education:</h3>
+                <p>B.tech in Robotics and Automation</p>
+            </li>
+
+            <li class="border-[0.5px] border-gray-400 p-6 cursor-pointer rounded-xl hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]
+            dark:border-white dark:hover:shadow-white dark:hover:bg-black/50"
+                ><img src="./portfolio_images/images/project-icon.png" class="w-7 mt-3 dark:hidden">
+                <img src="./portfolio_images/images/project-icon-dark.png" class="w-7 mt-3 hidden dark:block">
+                <h3 class="my-4 font-semibold text text-gray-700 dark:text-white">Projects:</h3>
+                <p>jhjj</p>
+            </li>
+            </ul>
+            <h4 class="my-6 text-gray-700 dark:text-white">Tools I use:</h4>
+            <ul class="flex items-center gap-3 sm:gap-5 " >
+               <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-500 rounded-lg  cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+               dark:border-white dark:hover:shadow-white dark:hover:bg-black/50"><img src="./portfolio_images/images/vscode.png" class="w-5 sm:w-7"></li> 
+               <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-500 rounded-lg  cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500
+               dark:border-white dark:hover:shadow-white dark:hover:bg-black/50"><img src="./portfolio_images/images/figma.png" class="w-5 sm:w-7"></li> 
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!---Projects-->
+
+
+<div id="project" class="w-full px-[12%] py-10 scroll-mt-20">
+
+    <h4 class="text-center mb-2 text-lg">My Portfolio</h2>
+    <h2 class="text-center text-5xl">My Latest Work</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12 ">Welcome to my web development portfolio! Explore the projects show casing my expertise in frontend development.</p>
+    
+    <div class="grid grid-cols-4 my-10 gap-5">
+        <div class="aspect-square bg-[url('./portfolio_images/images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+             <div>
+                <h2 class="font-semibold dark:text-black"><a href="">Frontend project</a></h2>
+                <p class="text-sm text-gray-700">Web Design</p>
+             </div>
+             <div class="border border-black rounded-full w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-100 transition">
+                <img src="./portfolio_images/images/send-icon.png" class="w-5">
+             </div>
+            </div>
+        </div> 
+
+        <div class="aspect-square bg-[url('./portfolio_images/images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+             <div>
+                <h2 class="font-semibold dark:text-black">Frontend project</h2>
+                <p class="text-sm text-gray-700">Web Design</p>
+             </div>
+             <div class="border border-black rounded-full w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-100 transition">
+                <img src="./portfolio_images/images/send-icon.png" class="w-5">
+             </div>
+            </div>
+        </div> 
+
+        <div class="aspect-square bg-[url('./portfolio_images/images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+             <div>
+                <h2 class="font-semibold dark:text-black">Frontend project</h2>
+                <p class="text-sm text-gray-700">Web Design</p>
+             </div>
+             <div class="border border-black rounded-full w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-100 transition">
+                <img src="./portfolio_images/images/send-icon.png" class="w-5">
+             </div>
+            </div>
+        </div> 
+
+        <div class="aspect-square bg-[url('./portfolio_images/images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+              <div>
+                <h2 class="font-semibold dark:text-black">Frontend project</h2>
+                <p class="text-sm text-gray-700">Web Design</p>
+              </div>
+              <div class="border border-black rounded-full w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-100 transition">
+                <img src="./portfolio_images/images/send-icon.png" class="w-5">
+              </div>
+            </div>
+        </div> 
+
+    </div>
+
+</div>
+
+<!---COntact -->
+<div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./portfolio_images/images/footer-bg-color.png')] bg-no-repeat
+bg-[length:90%-auto] bg-center">
+
+    <h4 class="text-center mb-2 text-lg">Connect with me</h2>
+    <h2 class="text-center text-5xl">Get in Touch</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12 ">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+    
+ <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto ">
+    <input type="hidden" name="access_key" value="303a4d1d-89fb-4e78-ba7b-26d92bfc716f">
+    <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+        <input type="text" placeholder="Enter your name" name="name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:text-black" required>
+        <input type="email" placeholder="Enter your E-mail" name="email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:text-black" required>    </div>
+        <textarea rows="6" placeholder="Enter your message" name="message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:text-black" required></textarea>
+        <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:text-white dark:hover-bg-[#403b3b]">Submit Now<img src="./portfolio_images/images/right-arrow-white.png" class="w-4"></button>
+    
+    </div>
+   
+ </form>
+
+</div>
+
+
+<!--Footer-->
+<div class="mt-20">
+
+<div class="text-center">
+    <img src="./logo.png" class="w-36 mx-auto mb-2 dark:hidden">
+    <img src="./logo-black.png" class="w-36 mx-auto mb-2 hidden dark:block">
+    <div class="w-max flex items-center mx-auto gap-2">
+      <img src="./portfolio_images/images/mail_icon.png" class="w-6">
+      dd.divit@gmail.com
+
+    </div>
+</div>
+   <div class="text-center justify-between sm:flex border-t border-gray-400 mx-[10%] mt-12 py-6">
+    <p>           </p>
+    <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+        <li><img src="./portfolio_images/images/inst.png" class="w-7  aspect-square flex items-center justify-center hidden dark:block">
+            <img src="./portfolio_images/images/inst_dark.png" class="w-7  aspect-square flex items-center justify-center dark:hidden"></li>
+       <li><a href="www.instagram.com/___divit___">Instagram</a></li>
+       <li><img src="./portfolio_images/images/githhub.png" class="w-9 aspect-square flex items-center justify-center dark:hidden">
+        <img src="./portfolio_images/images/githubblack.png" class="w-8 aspect-square flex items-center justify-center hidden dark:block"></li>
+       <li><a href="www.instagram.com/___divit___">Git Hub</a></li>
+       <li><img src="./portfolio_images/images/twitter.png" class="w-10 aspect-square flex items-center justify-center p-1"></li>
+       <li><a href="www.instagram.com/___divit___">Twitter</a></li>
+    </ul>
+
+   </div>
+</div>
+
+
+
+ <script src="./script.js"></script>
+
+  </body>
+</html>
+
